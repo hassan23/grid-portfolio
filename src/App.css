@@ -1,33 +1,118 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-direction: row;
+}
+
+.box {
+  width: 33.33%;
+  text-align: center;
+  vertical-align: center;
+  background-color: red;
   color: white;
+  height: 198px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.box:hover {
+  transform: scale(2.5);
+  transform-origin: top left;
+  box-shadow: 0 0 30px #424242;
+  transition: 500ms all ease;  
   }
-  to {
-    transform: rotate(360deg);
+
+  .about{
+    background: hsl(4,99%,66%);
+    transition: .3s all ease;  
   }
-}
+  .education{
+    background: hsl(233,21%,56%);
+    transition: .3s all ease;  
+  }
+  .projects{
+    background: hsl(357,26%,42%);
+    transition: .3s all ease;  
+  }
+  .certification{
+    background: hsl(144,33%,68%);
+    transition: .3s all ease;  
+  }
+  .me{
+    background: hsl(97,62%,80%);
+    transition: .3s all ease;  
+  }
+  .hobies{
+    background: hsl(4,99%,66%);
+    transition: .3s all ease;  
+  }
+  .blog{
+    background: hsl(233,21%,56%);
+    transition: .3s all ease;  
+  }
+  .repo{
+    background: hsl(357,26%,42%);
+    transition: .3s all ease;  
+  }
+
+  .contacts{
+    background: hsl(144,33%,68%);
+    transition: .3s all ease;  
+  }
+
+  .about:hover{
+    transform: scale(1.8);;
+    transform-origin: top left;
+    box-shadow: 0 0 30px #424242;  
+    
+  }
+  .education:hover{
+    transform: scale(1.8);
+    transform-origin: top;
+    box-shadow: 0 0 30px #424242;  
+    
+  }
+  .projects:hover{
+    transform: scale(1.8);
+    transform-origin: top right;
+    box-shadow: 0 0 30px #424242;  
+    
+  }
+  .certification:hover{
+    transform: scale(1.8);
+  transform-origin: left;
+    box-shadow: 0 0 30px #424242;  
+    
+  }
+  .me:hover{
+    transform: scale(1.8);
+    transform-origin: center;
+    box-shadow: 0 0 30px #424242;  
+    
+  }
+  .hobies:hover{
+    transform: scale(1.8);
+    transform-origin: right;
+    box-shadow: 0 0 30px #424242;  
+    
+  }
+  .blog:hover{
+    transform: scale(1.8);
+  transform-origin: bottom left;
+    box-shadow: 0 0 30px #424242;  
+    
+  }
+  .repo:hover{
+    transform: scale(1.8);
+  transform-origin: bottom;
+    box-shadow: 0 0 30px #424242;  
+    
+  }
+
+  .contacts:hover{
+    transform: scale(1.8);
+  transform-origin: bottom right;
+    box-shadow: 0 0 30px #424242;  
+    
+  }
