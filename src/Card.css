@@ -30,6 +30,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    box-shadow: 0 0 30px #424242;
   }
   
   .card > div {
@@ -42,8 +43,9 @@
   .card__avatar {
     height: 6rem;
     width: 6rem;
-    border-radius: 100%;
+    /* border-radius: 100%; */
     background-color: hsla(0, 0%, 0%, 0.2);
+    background-image: url("pro.jpg");
     margin-bottom: 1rem;
   }
   
@@ -55,10 +57,28 @@
   }
   
   .card__description {
+    overflow: hidden;
     height: 2rem;
-    width: 8rem;
-    background-color: hsla(0, 0%, 0%, 0.2);
-  }
+    /* width: 8rem; */
+    border-right: .08em solid whitesmoke;
+    text-align: center;
+    /* background-color: hsla(0, 0%, 0%, 0.2); */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: whitesmoke; }
+}
   
   .card--1 {
     background-color: #366f6e;
@@ -84,7 +104,7 @@
     background-color:   lightgray;
     color: lightgray;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-      "Roboto", "Helvetica Neue", Arial, sans-serif;
+    "Roboto", "Helvetica Neue", Arial, sans-serif;
     font-size: 1.1rem;
   }
   
@@ -125,6 +145,10 @@
   
   code {
     color: #7396e4;
+  }
+
+  .slide-top {
+    
   }
 
   @-webkit-keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-100px);transform:translateY(-100px)}}@keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-100px);transform:translateY(-100px)}}
