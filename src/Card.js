@@ -1,13 +1,15 @@
 import React from 'react';
 import { wrapGrid } from 'animate-css-grid';
+import Text from './sections/index';
 import './Card.css';
+
 
 const gridBoxes = [{
     subject: '<AboutMe />',
-    color: '#C26868'
+    color: '#4C5364'
 }, {
     subject: '<Education />',
-    color: '#4C5364'
+    color: '#e56e6e'
 }, {
     subject: '<SkillSet />',
     color: '#6aa0aa'
@@ -33,28 +35,7 @@ const gridBoxes = [{
     subject: '<ContactMe />',
     color: '#C26868'
 }];
-class Text extends React.Component {
-    render() {
-        return (<div>
-            <h3>MOHD HASSAAN </h3>
-            <p className="w3-container w3-center w3-animate-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsam magni,
-                quibusdam quia dolores iste blanditiis neque modi. Id voluptatibus tempora
-                itaque sint est nobis non fugit modi atque quia!</p>
-            <p className="slide-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsam magni,
-            quibusdam quia dolores iste blanditiis neque modi. Id voluptatibus tempora
-                itaque sint est nobis non fugit modi atque quia!</p>
-            <p className="slide-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsam magni,
-            quibusdam quia dolores iste blanditiis neque modi. Id voluptatibus tempora
-                itaque sint est nobis non fugit modi atque quia!</p>
-            <p className="slide-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsam magni,
-            quibusdam quia dolores iste blanditiis neque modi. Id voluptatibus tempora
-                itaque sint est nobis non fugit modi atque quia!</p>
-            <p className="slide-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsam magni,
-            quibusdam quia dolores iste blanditiis neque modi. Id voluptatibus tempora
-                itaque sint est nobis non fugit modi atque quia!</p>
-        </div>);
-    }
-}
+
 class Card extends React.Component {
     state = { expanded: false };
     randomNumber = Math.floor(Math.random() * 5) + 1;
@@ -69,11 +50,11 @@ class Card extends React.Component {
                 onClick={() => {
                     this.setState({ expanded: !this.state.expanded });
                 }}
-            >{this.state.expanded ? <Text /> :
+            >{this.state.expanded ? <Text category={this.props.subject} /> :
                 (<div>
 
                     {/* <div className="card__avatar" />
-                    <div className="card__title" /> */}
+                        <div className="card__title" /> */}
                     <div className="card__description"> {this.props.subject}</div>
                 </div>)}
             </div>
@@ -84,7 +65,7 @@ class Card extends React.Component {
 class Grid extends React.Component {
     componentDidMount() {
         // will automatically clean itself up when dom node is removed
-        wrapGrid(this.grid, { easing: 'anticipate', stagger: 10, duration: 1000, onEnd: () => <Text /> });
+        wrapGrid(this.grid, { easing: 'anticipate', stagger: 10, duration: 1000 });
     }
 
     render() {
@@ -116,4 +97,4 @@ class GridContainer extends React.Component {
 }
 
 export default GridContainer;
-// ReactDOM.render(<GridContainer />, document.getElementById("main"));
+    // ReactDOM.render(<GridContainer />, document.getElementById("main"));
