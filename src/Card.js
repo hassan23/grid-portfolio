@@ -86,7 +86,11 @@ class GridContainer extends React.Component {
         "grid-gap": false,
         "grid-template-columns": true,
     };
-
+    componentDidMount() {
+        if (window.innerWidth < 444) {
+            this.setState({ "grid-template-columns": false });
+        }
+    }
     render() {
         return (
             <div className="p-4">

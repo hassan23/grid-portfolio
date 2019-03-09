@@ -10,7 +10,7 @@
   }
   
   .grid-template-columns {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   }
   
   .grid-gap {
@@ -30,7 +30,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    box-shadow: 0 0 30px #424242;
+    /* box-shadow: 0 0 30px #424242; */
   }
   
   .card > div {

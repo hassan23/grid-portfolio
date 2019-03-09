@@ -6,7 +6,38 @@ export default class Certificate extends React.Component {
     render() {
         return (<div className="card-text">
             <div class="container">
-                <ul>
+                <div class="timeline-item" date-is='May 2018'>
+                    <h1>Datacamp</h1>
+                    <p><a style={{ color: 'white' }}
+                        href="https://www.datacamp.com/statement-of-accomplishment/course/6f0866676b18aa33b32febc2065fccc5f440b4dd">
+                        Statistical Thinking in Python </a></p>
+                </div>
+                <div class="timeline-item" date-is='May 2018'>
+                    <h1>Datacamp</h1>
+                    <p><a style={{ color: 'white' }}
+                        href="https://www.datacamp.com/statement-of-accomplishment/course/2af6542b3f57cb011ea1a0eecd5a3cf8e222fc4c">
+                        Supervised Learning with scikit-learn </a></p>
+                </div>
+
+                <div class="timeline-item" date-is='April 2018'>
+                    <h1>Udacity</h1>
+                    <p>
+                        <a style={{ color: 'white' }}
+                            href="https://graduation.udacity.com/confirm/32W7SPJR">
+                            Data Analyst Nanodegree
+                            </a></p>
+                </div>
+
+                <div class="timeline-item" date-is='Mar 2015'>
+                    <h1>EDX</h1>
+                    <p>
+                        <a style={{ color: 'white' }}
+                            href="https://s3.amazonaws.com/verify.edx.org/downloads/833cd47dea3f4875a40f53ce40bdade1/Certificate.pdf">
+                            Big Data with Apache Sparks
+                            </a></p>
+                </div>
+
+                {/* <ul>
                     <li>
                         <div><span></span>
                             <div class="title">Datacamp</div>
@@ -42,8 +73,9 @@ export default class Certificate extends React.Component {
                             </a></div>
                         </div> <span class="number"><span>May 2015</span> <span>Mar 2015</span></span>
                     </li>
-                </ul>
+                </ul> */}
             </div>
         </div>);
     }
 }
+
