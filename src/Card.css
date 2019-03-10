@@ -55,12 +55,14 @@
     background-color: hsla(0, 0%, 0%, 0.6);
     margin-bottom: 1rem;
   }
-  
+
   .card__description {
     overflow: hidden;
-    height: 1.5rem;
+    height: 2.5rem;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
     /* width: 8rem; */
-    border-right: .08em solid whitesmoke;
+    border-right: .1em solid whitesmoke;
     text-align: center;
     /* background-color: hsla(0, 0%, 0%, 0.2); */
     animation: 

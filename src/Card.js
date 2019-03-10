@@ -64,7 +64,10 @@ class Card extends React.Component {
 
                     {/* <div className="card__avatar" />
                         <div className="card__title" /> */}
-                    <div className="card__description" style={{ color: this.props.fontCol }}> {this.props.subject}</div>
+                    <div className="card__description" style={{
+                        color: this.props.fontCol
+
+                    }}> {this.props.subject}</div>
                 </div>)}
             </div>
         );
