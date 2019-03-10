@@ -1,9 +1,12 @@
 import React from 'react';
 import '../styles/Experience.css';
 export default class Experience extends React.Component {
+    fontCol = {
+        color: this.props.fontCol
+    }
     render() {
         return (<div className="card-text experience">
-            <div class="timeline-exper">
+            <div class="timeline-exper" style={this.fontCol}>
 
                 <div class="entry">
                     <div class="title">

@@ -6,34 +6,43 @@ import './Card.css';
 
 const gridBoxes = [{
     subject: '<AboutMe />',
-    color: '#4C5364'
+    color: '#233142',
+    fontCol: '#facf5a',
 }, {
     subject: '<Education />',
-    color: '#e56e6e'
+    color: '#233142',
+    fontCol: '#facf5a'
 }, {
     subject: '<SkillSet />',
-    color: '#6aa0aa'
+    color: '#233142',
+    fontCol: '#facf5a',
 }, {
     subject: '<Certification />',
-    color: '#49b790'
+    color: '#facf5a',
+    fontCol: '#233142'
 }, {
     subject: '<Experience />',
-    color: '#4d6961'
+    color: '#facf5a',
+    fontCol: '#233142'
 },
 {
     subject: '<Projects />',
-    color: '#a18a88'
+    color: '#facf5a',
+    fontCol: '#233142'
 },
 {
     subject: '<Blog />',
-    color: '#8eb1b1'
+    color: '#ff5959',
+    fontCol: '#facf5a'
 },
 {
     subject: '<Hobby />',
-    color: '#e56e6e'
+    color: '#ff5959',
+    fontCol: '#facf5a'
 }, {
     subject: '<ContactMe />',
-    color: '#C26868'
+    color: '#ff5959',
+    fontCol: '#facf5a'
 }];
 
 class Card extends React.Component {
@@ -50,12 +59,12 @@ class Card extends React.Component {
                 onClick={() => {
                     this.setState({ expanded: !this.state.expanded });
                 }}
-            >{this.state.expanded ? <Text category={this.props.subject} /> :
+            >{this.state.expanded ? <Text category={this.props.subject} fontCol={this.props.fontCol} /> :
                 (<div>
 
                     {/* <div className="card__avatar" />
                         <div className="card__title" /> */}
-                    <div className="card__description"> {this.props.subject}</div>
+                    <div className="card__description" style={{ color: this.props.fontCol }}> {this.props.subject}</div>
                 </div>)}
             </div>
         );
@@ -75,7 +84,7 @@ class Grid extends React.Component {
             .forEach(k => (classes += " " + k));
         return (
             <div className={classes} ref={el => (this.grid = el)}>
-                {[...gridBoxes].map(({ subject, color }) => <Card key={subject} color={color} subject={subject} />)}
+                {[...gridBoxes].map(({ subject, color, fontCol }) => <Card key={subject} color={color} subject={subject} fontCol={fontCol} />)}
             </div>
         );
     }

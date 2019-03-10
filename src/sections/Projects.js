@@ -30,7 +30,7 @@ export default class Projects extends React.Component {
                     <h1>Astro</h1>
                     <p>
                         <a style={{ color: 'white' }}
-                            href="adm.astro.com.my">
+                            href="https://adm.astro.com.my">
                             Web app for the employees and client of Astro. Keeping track of Orders, Program scheduling, logs,
                              sync with global timing,generating report in excel and PDF exports
                             </a></p>

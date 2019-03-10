@@ -6,7 +6,7 @@ export default class Blog extends React.Component {
             <div className="img-blog-wrapper">
                 <img src="https://cdn-images-1.medium.com/max/1600/1*emiGsBgJu2KHWyjluhKXQw.png" className="image-blog--cover" alt="My.jpg" />
                 <div className="blog-p">
-                    <p style={{ fontWeight: 200, fontStyle: 'italic', color: 'white' }}>
+                    <p style={{ fontWeight: 400, fontStyle: 'italic', color: this.props.fontCol, fontSize: '17px' }}>
                         <strong>
                             <a style={{ textDecoration: 'none', color: 'Black' }}
                                 href="https://medium.com/@sr.hassan23/crash-only-software-a7db5c703704">

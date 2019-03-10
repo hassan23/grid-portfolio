@@ -22,6 +22,6 @@ const categoryMap = {
 export default class Text extends React.Component {
     render() {
         const CategoryComponent = categoryMap[this.props.category];
-        return <CategoryComponent />
+        return <CategoryComponent fontCol={this.props.fontCol} />
     }
 }

@@ -101,8 +101,8 @@
   }
   
   body {
-    background-color:   lightgray;
-    color: lightgray;
+    background-color:  #4f9da6;
+    /* color: lightgray; */
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Helvetica Neue", Arial, sans-serif;
     font-size: 1.1rem;

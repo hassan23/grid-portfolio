@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class Contact extends React.Component {
     render() {
-        return (<div className="card-text">
+        return (<div className="card-text" style={{ color: this.props.fontCol }}>
             <h4>CONTACT ME</h4>
             <strong>Swing by for a cup of coffee, or leave me a email</strong>
             <div className="contact-img-wrapper">
