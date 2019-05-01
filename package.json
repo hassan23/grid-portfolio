@@ -9,7 +9,6 @@
     "react-scripts": "2.1.8",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.86.0",
-    "nomnom":"1.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
